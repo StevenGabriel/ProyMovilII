@@ -1,14 +1,17 @@
 package com.example.proymovilii;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,10 +19,6 @@ import androidx.fragment.app.Fragment;
  * create an instance of this fragment.
  */
 public class SuggestionFragment extends Fragment {
-
-    public interface ISuggestionFragment{
-        void imputTwo(String imput);
-    }
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,9 +28,11 @@ public class SuggestionFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private Button dasdas;
-    private View view;
-    ISuggestionFragment callBack;
+    private Button btnSendMessage;
+    private EditText etMessage;
+    View view;
+    private String uri;
+
 
     public SuggestionFragment() {
         // Required empty public constructor
@@ -43,7 +44,7 @@ public class SuggestionFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ContactFragment.
+     * @return A new instance of fragment SuggestionFragment.
      */
     // TODO: Rename and change types and number of parameters
     public static SuggestionFragment newInstance(String param1, String param2) {
@@ -62,19 +63,35 @@ public class SuggestionFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_suggestion, container, false);
-        dasdas = view.findViewById(R.id.btnSendMessage);
         // Inflate the layout for this fragment
-        dasdas.setOnClickListener(new View.OnClickListener() {
+        view = inflater.inflate(R.layout.fragment_suggestion, container, false);
+        btnSendMessage = view.findViewById(R.id.btnSendMessage);
+        etMessage = view.findViewById(R.id.etMessage);
+        btnSendMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "JAJAJAJA", Toast.LENGTH_SHORT).show();
+                try {
+                    String phoneString = "72271495";
+                    String messageString = etMessage.getText().toString().trim();
+                    if (messageString.equals("")){
+                        etMessage.setError("Ingrese una sugerencia");
+                        etMessage.requestFocus();
+                        return;
+                    }
+                    //https://wa.me/+59172213442/?text=hola
+                    uri = "https://wa.me/+591 "+ phoneString + "/?text=" + messageString;
+                    //Abrir el url:
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(uri));
+                    startActivity(intent);
+                }catch (Exception ex){
+                    Toast.makeText(getActivity(), "Error: " + ex.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
         return view;

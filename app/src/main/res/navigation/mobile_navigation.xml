@@ -37,7 +37,7 @@
 
     <fragment
         android:id="@+id/nav_suggestion"
-        android:name="com.example.proymovilii.LogoutFragment"
+        android:name="com.example.proymovilii.SuggestionFragment"
         android:label="@string/sugerencias"
         tools:layout="@layout/fragment_suggestion" />
 
