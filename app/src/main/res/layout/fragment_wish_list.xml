@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WishListFragment">
+    android:orientation="vertical"
+    android:background="#14213D"
+    tools:context=".WishListFragment" >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <EditText
+        android:id="@+id/etEnterNameManga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Ingresar nombre de manga"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#54FDFDFD" />
+
+    <Button
+        android:id="@+id/btnPublishManga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="publicar"
+        android:backgroundTint="#d97a3a "
+        />
+
+    <ListView
+        android:id="@+id/lvWishList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:background="#FFFFFF" />
+</LinearLayout>
