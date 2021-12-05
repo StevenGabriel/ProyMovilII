@@ -76,7 +76,7 @@ public class SuggestionFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 try {
-                    String phoneString = "72271495";
+                    String phoneString = "67524675";
                     String messageString = etMessage.getText().toString().trim();
                     if (messageString.equals("")){
                         etMessage.setError("Ingrese una sugerencia");
