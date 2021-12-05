@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#14213D"
     android:orientation="vertical"
-    tools:context=".LogoutFragment">
+    tools:context=".SuggestionFragment">
 
     <TextView
         android:id="@+id/textView21"
