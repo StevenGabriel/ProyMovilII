@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_principal_page">
+
+    <fragment
+        android:id="@+id/nav_principal_page"
+        android:name="com.example.proymovilii.ui.home.HomeFragment"
+        android:label="@string/pagina_principal"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_how_find_us"
+        android:name="com.example.proymovilii.ui.gallery.GalleryFragment"
+        android:label="@string/como_encontrarnos"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_my_profile"
+        android:name="com.example.proymovilii.ui.slideshow.SlideshowFragment"
+        android:label="@string/mi_perfil"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_wish_list"
+        android:name="com.example.proymovilii.WishListFragment"
+        android:label="@string/lista_de_deseos"
+        tools:layout="@layout/fragment_wish_list" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.proymovilii.ContactFragment"
+        android:label="@string/contactos"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/nav_suggestion"
+        android:name="com.example.proymovilii.LogoutFragment"
+        android:label="@string/sugerencias"
+        tools:layout="@layout/fragment_suggestion" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.example.proymovilii.AboutUsFragment"
+        android:label="@string/acerca_de_nosotros"
+        tools:layout="@layout/fragment_about_us" />
+
+</navigation>

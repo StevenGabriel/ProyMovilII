@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_principal_page"
+            android:icon="@drawable/ic_main_page"
+            android:title="@string/pagina_principal" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_menu_about_us"
+            android:title="@string/acerca_de_nosotros" />
+        <item
+            android:id="@+id/nav_how_find_us"
+            android:icon="@drawable/ic_menu_how_find_us"
+            android:title="@string/como_encontrarnos" />
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/mi_perfil" />
+        <item
+            android:id="@+id/nav_wish_list"
+            android:icon="@drawable/ic_menu_wish_list"
+            android:title="@string/lista_de_deseos" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_contact"
+            android:title="@string/contactos" />
+        <item
+            android:id="@+id/nav_suggestion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/sugerencias" />
+    </group>
+</menu>
