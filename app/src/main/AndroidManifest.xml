@@ -16,6 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyMovilII">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".Visualizador_ChainSawMan"
             android:exported="true" />
         <!--
