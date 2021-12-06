@@ -15,18 +15,24 @@
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/drawable/ic_menu_wish_list.xml" value="0.3828125" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/drawable/profile.xml" value="0.3828125" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/drawable/splash_screen.xml" value="0.3828125" />
+        <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/activity_login_register.xml" value="0.32065217391304346" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/activity_main.xml" value="0.3428442028985507" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/activity_next.xml" value="0.3188405797101449" />
+        <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/activity_registration.xml" value="0.25" />
+        <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/activity_visualizador_chain_saw_man.xml" value="0.35190217391304346" />
+        <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/activity_visualizador_manga_Chain_Saw_Man.xml" value="0.35190217391304346" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/app_bar_main.xml" value="0.3428442028985507" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/content_main.xml" value="0.3428442028985507" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_about_us.xml" value="0.33" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_contact.xml" value="0.33967391304347827" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_gallery.xml" value="0.32971014492753625" />
-        <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_home.xml" value="0.2938388625592417" />
+        <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_logout.xml" value="0.3428442028985507" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_maps.xml" value="0.20520833333333333" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_slideshow.xml" value="0.3428442028985507" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_suggestion.xml" value="0.3188405797101449" />
+        <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/fragment_wish_list.xml" value="0.25" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/layout/nav_header_main.xml" value="0.32971014492753625" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
         <entry key="..\:/Univalle/progra movil/archivos android studio/ProyMovilII/app/src/main/res/menu/main.xml" value="0.36666666666666664" />
@@ -38,7 +44,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
