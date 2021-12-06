@@ -7,30 +7,41 @@
     android:background="#14213D"
     tools:context=".WishListFragment" >
 
-    <EditText
-        android:id="@+id/etEnterNameManga"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:ems="10"
-        android:hint="Ingresar nombre de manga"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#54FDFDFD" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnPublishManga"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="publicar"
-        android:backgroundTint="#d97a3a "
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/lvWishList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="15dp"
-        android:background="#FFFFFF" />
+            <EditText
+                android:id="@+id/etEnterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Ingresar nombre de manga"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#54FDFDFD" />
+
+            <Button
+                android:id="@+id/btnPublish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#d97a3a "
+                android:text="publicar" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
